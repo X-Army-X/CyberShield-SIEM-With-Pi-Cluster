@@ -53,10 +53,10 @@ This repository contains **configuration artifacts**, **dashboards**, **sanitize
 
 ## Diagrams
 See: `docs/architecture/diagrams/`
-- Flow chart: `flow_chart.png`
-- Logical architecture: `logical_architecture.png`
-- Physical architecture: `physical_architecture.png`
-- Use case: `use_case.png`
+- Flow chart: `docs/architecture/diagrams/flow_chart.png`
+- Logical architecture: `docs/architecture/diagrams/logical_architecture.png`
+- Physical architecture: `docs/architecture/diagrams/physical_architecture.png`
+- Use case: `docs/architecture/diagrams/use_case.png`
 
 ---
 
