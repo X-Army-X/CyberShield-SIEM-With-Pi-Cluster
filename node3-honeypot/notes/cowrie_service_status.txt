@@ -1,0 +1,16 @@
+● cowrie.service - Cowrie SSH/Telnet Honeypot
+     Loaded: loaded (/etc/systemd/system/cowrie.service; enabled; preset: enabled)
+     Active: active (running) since Tue 2026-01-13 03:40:02 +04; 5 days ago
+ Invocation: e906486cae1a4b40b20b30dd02bb22a9
+   Main PID: 12363 (twistd)
+      Tasks: 1 (limit: 9578)
+        CPU: 477ms
+     CGroup: /system.slice/cowrie.service
+             └─12363 /home/cowrie/cowrie/cowrie-env/bin/python3 /home/cowrie/cowrie/cowrie-env/bin/twistd --pidfile=var/run/cowrie.pid -l var/log/cowrie/twistd.log cowrie
+
+Jan 13 03:40:02 hn systemd[1]: Starting cowrie.service - Cowrie SSH/Telnet Honeypot...
+Jan 13 03:40:02 hn start_cowrie.sh[12361]: /home/cowrie/cowrie/cowrie-env/lib/python3.13/site-packages/twisted/conch/ssh/transport.py:110: CryptographyDeprecationWarning: TripleDES has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.TripleDES and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+Jan 13 03:40:02 hn start_cowrie.sh[12361]:   b"3des-cbc": (algorithms.TripleDES, 24, modes.CBC),
+Jan 13 03:40:02 hn start_cowrie.sh[12361]: /home/cowrie/cowrie/cowrie-env/lib/python3.13/site-packages/twisted/conch/ssh/transport.py:117: CryptographyDeprecationWarning: TripleDES has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.TripleDES and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+Jan 13 03:40:02 hn start_cowrie.sh[12361]:   b"3des-ctr": (algorithms.TripleDES, 24, modes.CTR),
+Jan 13 03:40:02 hn systemd[1]: Started cowrie.service - Cowrie SSH/Telnet Honeypot.

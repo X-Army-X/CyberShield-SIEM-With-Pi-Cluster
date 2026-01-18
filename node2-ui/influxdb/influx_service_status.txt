@@ -1,0 +1,21 @@
+● influxdb.service - InfluxDB is an open-source, distributed, time series database
+     Loaded: loaded (/usr/lib/systemd/system/influxdb.service; enabled; preset: enabled)
+     Active: active (running) since Sun 2026-01-04 21:44:38 +04; 1 week 6 days ago
+ Invocation: acb79082ad0f473192062b005695999e
+       Docs: https://docs.influxdata.com/influxdb/
+   Main PID: 1062 (influxd)
+      Tasks: 16 (limit: 9578)
+        CPU: 21min 22.075s
+     CGroup: /system.slice/influxdb.service
+             └─1062 /usr/bin/influxd
+
+Jan 18 01:22:31 ui influxd-systemd-start.sh[1062]: ts=2026-01-17T21:22:31.287515Z lvl=info msg="Pruning shard groups after retention check (end)" log_id=10EXcHFW000 service=retention op_name=retention_delete_check op_name=retention_prune_shard_groups op_event=end op_elapsed=0.524ms
+Jan 18 01:22:31 ui influxd-systemd-start.sh[1062]: ts=2026-01-17T21:22:31.287542Z lvl=info msg="Retention policy deletion check (end)" log_id=10EXcHFW000 service=retention op_name=retention_delete_check op_event=end op_elapsed=0.635ms
+Jan 18 01:52:31 ui influxd-systemd-start.sh[1062]: ts=2026-01-17T21:52:31.286699Z lvl=info msg="Retention policy deletion check (start)" log_id=10EXcHFW000 service=retention op_name=retention_delete_check op_event=start
+Jan 18 01:52:31 ui influxd-systemd-start.sh[1062]: ts=2026-01-17T21:52:31.286759Z lvl=info msg="Pruning shard groups after retention check (start)" log_id=10EXcHFW000 service=retention op_name=retention_delete_check op_name=retention_prune_shard_groups op_event=start
+Jan 18 01:52:31 ui influxd-systemd-start.sh[1062]: ts=2026-01-17T21:52:31.286811Z lvl=info msg="Pruning shard groups after retention check (end)" log_id=10EXcHFW000 service=retention op_name=retention_delete_check op_name=retention_prune_shard_groups op_event=end op_elapsed=0.053ms
+Jan 18 01:52:31 ui influxd-systemd-start.sh[1062]: ts=2026-01-17T21:52:31.286827Z lvl=info msg="Retention policy deletion check (end)" log_id=10EXcHFW000 service=retention op_name=retention_delete_check op_event=end op_elapsed=0.137ms
+Jan 18 02:22:31 ui influxd-systemd-start.sh[1062]: ts=2026-01-17T22:22:31.286235Z lvl=info msg="Retention policy deletion check (start)" log_id=10EXcHFW000 service=retention op_name=retention_delete_check op_event=start
+Jan 18 02:22:31 ui influxd-systemd-start.sh[1062]: ts=2026-01-17T22:22:31.286309Z lvl=info msg="Pruning shard groups after retention check (start)" log_id=10EXcHFW000 service=retention op_name=retention_delete_check op_name=retention_prune_shard_groups op_event=start
+Jan 18 02:22:31 ui influxd-systemd-start.sh[1062]: ts=2026-01-17T22:22:31.286343Z lvl=info msg="Pruning shard groups after retention check (end)" log_id=10EXcHFW000 service=retention op_name=retention_delete_check op_name=retention_prune_shard_groups op_event=end op_elapsed=0.037ms
+Jan 18 02:22:31 ui influxd-systemd-start.sh[1062]: ts=2026-01-17T22:22:31.286358Z lvl=info msg="Retention policy deletion check (end)" log_id=10EXcHFW000 service=retention op_name=retention_delete_check op_event=end op_elapsed=0.156ms

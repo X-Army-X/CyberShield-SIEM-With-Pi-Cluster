@@ -1,0 +1,21 @@
+● grafana-server.service - Grafana instance
+     Loaded: loaded (/usr/lib/systemd/system/grafana-server.service; enabled; preset: enabled)
+     Active: active (running) since Tue 2026-01-13 02:57:21 +04; 4 days ago
+ Invocation: 33b56ea19b16442192ed80ade7d6eaa8
+       Docs: http://docs.grafana.org
+   Main PID: 33792 (grafana)
+      Tasks: 17 (limit: 9578)
+        CPU: 17min 29.170s
+     CGroup: /system.slice/grafana-server.service
+             └─33792 /usr/share/grafana/bin/grafana server --config=/etc/grafana/grafana.ini --pidfile=/run/grafana/grafana-server.pid --packaging=deb cfg:default.paths.logs=/var/log/grafana cfg:default.paths.data=/var/lib/grafana cfg:default.paths.plugins=/var/lib/grafana/plugins cfg:default.paths.provisioning=/etc/grafana/provisioning
+
+Jan 18 02:24:10 ui grafana[33792]: logger=ngalert.sender.router rule_uid=af9zkwxy80iyoa org_id=1 t=2026-01-18T02:24:10.03195371+04:00 level=info msg="Sending alerts to local notifier" count=1
+Jan 18 02:25:10 ui grafana[33792]: logger=ngalert.sender.router rule_uid=af9zkwxy80iyoa org_id=1 t=2026-01-18T02:25:10.02890565+04:00 level=info msg="Sending alerts to local notifier" count=1
+Jan 18 02:26:10 ui grafana[33792]: logger=ngalert.sender.router rule_uid=af9zkwxy80iyoa org_id=1 t=2026-01-18T02:26:10.031384602+04:00 level=info msg="Sending alerts to local notifier" count=1
+Jan 18 02:27:10 ui grafana[33792]: logger=ngalert.sender.router rule_uid=af9zkwxy80iyoa org_id=1 t=2026-01-18T02:27:10.028422346+04:00 level=info msg="Sending alerts to local notifier" count=1
+Jan 18 02:27:22 ui grafana[33792]: logger=cleanup t=2026-01-18T02:27:22.586491064+04:00 level=info msg="Completed cleanup jobs" duration=86.044654ms
+Jan 18 02:27:22 ui grafana[33792]: logger=plugins.update.checker t=2026-01-18T02:27:22.887319233+04:00 level=info msg="Update check succeeded" duration=244.85906ms
+Jan 18 02:28:10 ui grafana[33792]: logger=ngalert.sender.router rule_uid=af9zkwxy80iyoa org_id=1 t=2026-01-18T02:28:10.061858181+04:00 level=info msg="Sending alerts to local notifier" count=1
+Jan 18 02:29:09 ui grafana[33792]: logger=infra.usagestats t=2026-01-18T02:29:09.515358593+04:00 level=info msg="Usage stats are ready to report"
+Jan 18 02:29:10 ui grafana[33792]: logger=ngalert.sender.router rule_uid=af9zkwxy80iyoa org_id=1 t=2026-01-18T02:29:10.030511434+04:00 level=info msg="Sending alerts to local notifier" count=1
+Jan 18 02:30:10 ui grafana[33792]: logger=ngalert.sender.router rule_uid=af9zkwxy80iyoa org_id=1 t=2026-01-18T02:30:10.062519987+04:00 level=info msg="Sending alerts to local notifier" count=1

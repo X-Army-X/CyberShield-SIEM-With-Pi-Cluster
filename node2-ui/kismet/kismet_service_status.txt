@@ -1,0 +1,23 @@
+● kismet.service - Kismet Wireless Monitor
+     Loaded: loaded (/etc/systemd/system/kismet.service; enabled; preset: enabled)
+    Drop-In: /etc/systemd/system/kismet.service.d
+             └─override.conf
+     Active: active (running) since Wed 2026-01-14 18:44:24 +04; 3 days ago
+ Invocation: 83191085a04741b8a9339372ee24d795
+   Main PID: 622237 (kismet)
+      Tasks: 30 (limit: 9578)
+        CPU: 1h 10min 17.671s
+     CGroup: /system.slice/kismet.service
+             ├─622237 /usr/local/bin/kismet -c wlan1
+             └─622286 /usr/local/bin/kismet_cap_linux_wifi --in-fd=12 --out-fd=15
+
+Jan 18 02:23:29 ui kismet[622237]: INFO: Detected new 802.11 Wi-Fi device CA:A0:8D:1E:37:AA
+Jan 18 02:23:42 ui kismet[622237]: INFO: Detected new 802.11 Wi-Fi device 02:CB:7B:A0:21:27
+Jan 18 02:23:57 ui kismet[622237]: INFO: Detected new 802.11 Wi-Fi device 0E:0D:FA:5C:20:30
+Jan 18 02:23:57 ui kismet[622237]: INFO: Detected new 802.11 Wi-Fi device 7A:95:8F:33:D8:0B
+Jan 18 02:23:57 ui kismet[622237]: INFO: Detected new 802.11 Wi-Fi device C6:60:FC:F0:84:C5
+Jan 18 02:25:59 ui kismet[622237]: INFO: Detected new 802.11 Wi-Fi device AE:43:52:7B:47:0B
+Jan 18 02:28:18 ui kismet[622237]: INFO: Detected new 802.11 Wi-Fi device D2:95:29:E5:B7:39
+Jan 18 02:28:32 ui kismet[622237]: INFO: Detected new 802.11 Wi-Fi device DA:A1:19:64:64:64
+Jan 18 02:30:06 ui kismet[622237]: INFO: Detected new 802.11 Wi-Fi device C2:C9:5E:1B:35:27
+Jan 18 02:30:41 ui kismet[622237]: INFO: Detected new 802.11 Wi-Fi device A6:3E:07:22:83:65

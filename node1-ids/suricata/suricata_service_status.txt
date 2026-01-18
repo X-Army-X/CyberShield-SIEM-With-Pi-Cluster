@@ -1,0 +1,18 @@
+● suricata.service - Suricata IDS/IDP daemon
+     Loaded: loaded (/usr/lib/systemd/system/suricata.service; enabled; preset: enabled)
+     Active: active (running) since Sun 2026-01-18 00:59:50 +04; 1h 26min ago
+ Invocation: 619e418b16314db49fc840258792a558
+       Docs: man:suricata(8)
+             man:suricatasc(8)
+             https://suricata.io/documentation/
+    Process: 27556 ExecStart=/usr/bin/suricata -D --af-packet -c /etc/suricata/suricata.yaml --pidfile /run/suricata.pid (code=exited, status=0/SUCCESS)
+   Main PID: 27564 (Suricata-Main)
+      Tasks: 8 (limit: 9575)
+        CPU: 32.744s
+     CGroup: /system.slice/suricata.service
+             └─27564 /usr/bin/suricata -D --af-packet -c /etc/suricata/suricata.yaml --pidfile /run/suricata.pid
+
+Jan 18 00:59:50 IDS systemd[1]: suricata.service: Scheduled restart job, restart counter is at 25.
+Jan 18 00:59:50 IDS systemd[1]: Starting suricata.service - Suricata IDS/IDP daemon...
+Jan 18 00:59:50 IDS suricata[27556]: i: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+Jan 18 00:59:50 IDS systemd[1]: Started suricata.service - Suricata IDS/IDP daemon.
